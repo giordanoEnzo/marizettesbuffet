@@ -1,0 +1,132 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Marizette's Buffet Luxury Design System */
+    --background: 7 70% 9%;
+    --foreground: 0 0% 100%;
+
+    --card: 7 65% 13%;
+    --card-foreground: 0 0% 100%;
+
+    --popover: 7 70% 9%;
+    --popover-foreground: 0 0% 100%;
+
+    /* Primary: Dourado Cobre */
+    --primary: 25 62% 58%;
+    --primary-foreground: 7 70% 9%;
+
+    /* Secondary: Marrom Médio */
+    --secondary: 7 60% 20%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 7 50% 25%;
+    --muted-foreground: 25 40% 70%;
+
+    /* Accent: Dourado Brilhante */
+    --accent: 28 65% 65%;
+    --accent-foreground: 7 70% 9%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 25 62% 35%;
+    --input: 7 55% 18%;
+    --ring: 25 62% 58%;
+
+    --radius: 0.5rem;
+
+    /* Gradients */
+    --gradient-gold: linear-gradient(135deg, hsl(25, 62%, 58%) 0%, hsl(28, 65%, 65%) 100%);
+    --gradient-dark: linear-gradient(180deg, hsl(7, 70%, 9%) 0%, hsl(7, 65%, 13%) 100%);
+    
+    /* Shadows */
+    --shadow-gold: 0 10px 40px -10px hsl(25 62% 58% / 0.3);
+    --shadow-elegant: 0 20px 60px -15px hsl(0 0% 0% / 0.5);
+    
+    /* Animations */
+    --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-elegant: all 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-body;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer utilities {
+  .animate-fade-in {
+    animation: fadeIn 1s ease-out forwards;
+  }
+
+  .animate-fade-in-up {
+    animation: fadeInUp 1s ease-out forwards;
+  }
+
+  .animate-scale-in {
+    animation: scaleIn 0.6s ease-out forwards;
+  }
+
+  .gold-divider {
+    @apply h-px bg-gradient-to-r from-transparent via-primary to-transparent;
+  }
+
+  .text-gradient-gold {
+    @apply bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent;
+  }
+
+  .section-padding {
+    @apply py-20 md:py-32;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
