@@ -37,7 +37,7 @@ const ChefSection = () => {
             <div className="space-y-6 animate-fade-in-up order-1 md:order-2">
               <div>
                 <h3 className="text-3xl font-heading font-bold mb-2">
-                  Chef Marizette Silva
+                  Chef Marizette dos Santos
                 </h3>
                 <p className="text-primary font-body font-semibold mb-4">
                   Proprietária & Chef Executiva

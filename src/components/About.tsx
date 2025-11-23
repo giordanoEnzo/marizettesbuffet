@@ -26,7 +26,7 @@ const About = () => {
               </p>
               <p className="text-base md:text-lg font-body text-foreground/80 leading-relaxed">
                 A frente do Marizette's Buffet, conquistou o respeito e o paladar dos clientes mais exigentes de Araras
-                a grandes nomes da música , do esporte e da televisão brasileira, como Roberto Carlos, Xuxa Meneghel,
+                a grandes nomes da música , do esporte e da televisão brasileira, como Neymar, Roberto Carlos, Xuxa Meneghel,
                 Ratinho, Pelé e Faustão.
               </p>
               <p className="text-base md:text-lg font-body text-foreground/80 leading-relaxed">
