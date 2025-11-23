@@ -25,7 +25,7 @@ const Services = () => {
       icon: ChefHat,
       title: "Cardápios Exclusivos",
       description: "Criamos menus únicos adaptados ao seu gosto, preferências dietéticas e orçamento, sempre com ingredientes premium.",
-      features: ["Consultoria gastronômica", "Degustação prévia", "Opções veganas/vegetarianas", "Ingredientes selecionados"],
+      features: ["Consultoria gastronômica", "Degustação prévia", "Ingredientes selecionados"],
     },
   ];
 
